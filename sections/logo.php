@@ -1,0 +1,1 @@
+<h2 align="left">Web based Sacco App V1.2 <!--<img src="templates/microfin/imgs/logo.png" alt="Microfin (U) ltd" title="Microfin ltd" /> --></h2>

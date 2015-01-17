@@ -1,0 +1,2 @@
+[09-Jul-2012 17:12:06 UTC] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/microfin/public_html/15.3.3/system/db_obj.php on line 17
+[12-Jul-2012 20:27:18 UTC] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/microfin/public_html/pallisa/transactions.php on line 47

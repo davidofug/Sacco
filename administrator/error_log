@@ -1,0 +1,14 @@
+[12-Jul-2012 20:59:40 UTC] PHP Warning:  require_once(/home/microfin/public_html/pallisa/administrator/system/layoutEngine.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/microfin/public_html/pallisa/administrator/index.php on line 19
+[12-Jul-2012 20:59:40 UTC] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/microfin/public_html/pallisa/administrator/system/layoutEngine.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/microfin/public_html/pallisa/administrator/index.php on line 19
+[12-Jul-2012 21:19:24 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/microfin/public_html/pallisa/administrator/index.php on line 25
+[12-Jul-2012 21:53:58 UTC] PHP Fatal error:  Call to a member function perform_request() on a non-object in /home/microfin/public_html/pallisa/administrator/transactions.php on line 43
+[12-Jul-2012 21:56:59 UTC] PHP Fatal error:  Call to a member function perform_request() on a non-object in /home/microfin/public_html/pallisa/administrator/transactions.php on line 43
+[12-Jul-2012 21:58:44 UTC] PHP Fatal error:  Call to a member function perform_request() on a non-object in /home/microfin/public_html/pallisa/administrator/transactions.php on line 42
+[13-Jul-2012 06:09:40 UTC] PHP Fatal error:  Call to a member function perform_request() on a non-object in /home/microfin/public_html/pallisa/administrator/transactions.php on line 42
+[13-Jul-2012 07:15:09 UTC] PHP Fatal error:  Cannot redeclare listTransactions() (previously declared in /home/microfin/public_html/pallisa/administrator/transactions.php:78) in /home/microfin/public_html/pallisa/administrator/transactions.php on line 109
+[13-Jul-2012 07:26:39 UTC] PHP Parse error:  syntax error, unexpected T_STRING in /home/microfin/public_html/pallisa/administrator/transactions.php on line 55
+[13-Jul-2012 08:27:35 UTC] PHP Parse error:  syntax error, unexpected '}', expecting T_ENDSWITCH or T_CASE or T_DEFAULT in /home/microfin/public_html/pallisa/administrator/transactions.php on line 60
+[13-Jul-2012 08:59:15 UTC] PHP Fatal error:  Cannot redeclare listTransactions() (previously declared in /home/microfin/public_html/pallisa/administrator/transactions.php:102) in /home/microfin/public_html/pallisa/administrator/transactions.php on line 135
+[13-Jul-2012 09:42:18 UTC] PHP Parse error:  syntax error, unexpected T_STRING in /home/microfin/public_html/pallisa/administrator/transactions.php on line 144
+[13-Jul-2012 10:12:07 UTC] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home/microfin/public_html/pallisa/administrator/transactions.php on line 162
+[13-Jul-2012 10:25:08 UTC] PHP Parse error:  syntax error, unexpected T_STRING in /home/microfin/public_html/pallisa/administrator/transactions.php on line 143

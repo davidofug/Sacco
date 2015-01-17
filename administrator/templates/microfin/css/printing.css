@@ -1,0 +1,27 @@
+body{
+	background: #fff;
+	font: normal 10px;
+	font-family: "Times new roman";
+	color: #000;
+	text-align:left;
+	}
+.clear{
+		clear:both;
+		}
+.header{
+display:none;
+	}
+
+.navigation{
+			display:none;
+			}
+
+.search_container{
+			display:none;
+			}
+#arrange{
+		display:none;
+		}
+.footer{
+	display:none;
+		}

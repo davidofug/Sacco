@@ -1,0 +1,51 @@
+body{
+	background: #fff;
+	font-family: Verdana;
+	color: #000;
+	text-align:center;
+	font-size:70%;
+	}
+.clear{
+		clear:both;
+		}
+.header{
+display:none;
+	}
+
+.navigation{
+			display:none;
+			}
+
+.search_container{
+			display:none;
+			}
+.form{
+	display:none;
+	}
+#arrange{
+		display:none;
+		}
+.grid{
+	 width: 80%;
+	 margin:0 auto;
+	 text-align:left;
+	 }
+.grid table{
+	width: 100%;
+	border: 1px solid #000;
+	border-collapse:collapse;
+	}
+table.dailysummery{
+	width:50%;
+	}
+tr,th,td{
+	border: 1px solid #000;
+	text-align:right;
+	padding: 5px;
+	}
+.main_layer table .out{
+	color: #f00;
+	}
+.footer{
+	display:none;
+		}

@@ -1,0 +1,6 @@
+[09-Jul-2012 17:12:06 UTC] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/microfin/public_html/15.3.3/system/db_obj.php on line 17
+[12-Jul-2012 20:27:18 UTC] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/microfin/public_html/pallisa/transactions.php on line 47
+[06-Mar-2013 04:47:26 UTC] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/microfin/public_html/demo/system/db_obj.php on line 21
+[06-Mar-2013 07:51:38 UTC] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/microfin/public_html/demo/system/db_obj.php on line 21
+[30-Apr-2013 15:13:18 Africa/Nairobi] PHP Fatal error:  Call to undefined method driver::con_To_Server() in /home/microfin/public_html/demo/pages/transactions.php on line 7
+[05-May-2013 18:26:12 Europe/Moscow] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/microfin/public_html/demo/system/db_obj.php on line 21

@@ -1,0 +1,126 @@
+body{
+	background: url('../imgs/top_body_bg.jpg') top left repeat-x;
+	min-width: 900px;
+	width:100%;
+	font-size: 80%;
+	font-family: calibri,verdana, "arial narrow";
+	color: #000;
+	text-align:center;
+	margin:0;
+	padding:0;
+	}
+img{
+	border: 0;
+	}
+.clear{
+		clear:both;
+		}
+.main_layer{
+	margin: 0;
+	padding: 10px;
+	text-align:left;
+	font-size: 1.5em;
+	}
+.main_layer table td{
+	font-size:1em;
+	text-align: right;
+	}
+.main_layer table th{
+	font-size:1em;
+	text-align:right;
+	padding:0 5px;
+	}
+.header{
+	padding: 4px;
+	font-size: 1em;
+	}
+.logo{
+			background: url('../imgs/logo.png') no-repeat ;
+			height: 30px;
+		}
+.header ul{ 
+		 border: 0;
+		 height:60px;
+		 list-style: none;
+		 padding-left: 350px;
+		 }
+.header ul li{
+			float: left;
+			margin: 0 10px;
+			
+		   }
+.header a{
+			 text-decoration: none;
+			 }
+.header span{
+			display:block;
+			height: 42px;
+			width: 150px;
+			}
+.header span.img-print{
+			background: url('../imgs/print_button.png') center 1% no-repeat;
+			}
+.header span.img-cash{
+			background: url('../imgs/cash_button.png') center 1% no-repeat;
+			}
+.header span.img-logout{
+			background: url('../imgs/logout_button.png') center 1% no-repeat;
+			}
+.header span.text{
+				font-weight: bold;
+				color: #09f;
+				}
+.navigation{
+			background: url('../imgs/buttons_bg.png') repeat-x;
+
+		}
+.navigation ul{ 
+			  font-size:1em;
+			  list-style: none;
+			  }
+.navigation li{	
+				display:inline;
+				height: 28px;
+				line-height: 28px;
+				margin:0 5px;
+				padding:0;
+				}
+.navigation li a{
+				text-decoration:none;
+				color: #fff;
+				}
+.navigation li a:hover{
+					border-bottom: 1px dotted #fff;
+				}
+.search_container{
+			margin: 10px 100px;
+			}
+.search_container input{
+			margin:0;
+			padding:0;
+			border:0;
+			}
+.search_container label{
+			border: 1px solid #8FDF37;
+			background: url('../imgs/search_bg.jpg') repeat-x;
+			}
+#arrange{
+		color:#999;
+		background: url('../imgs/asc.png') no-repeat top left;
+		margin: 4px;
+		height: 20px;
+		padding-left: 25px;
+		font-size: .7em;
+		font-variant: small-caps;
+		}
+.footer{
+		background: url('../imgs/footer_bg.jpg') repeat-x top left;
+		height: 69px;
+		color: #999;
+		}
+.footer div p{
+			font-size: .8em;
+			}
+.error{
+		color: #f00;
+		}

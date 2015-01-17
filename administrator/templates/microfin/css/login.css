@@ -1,0 +1,42 @@
+.logon{
+		margin-left: 600px;
+		margin-bottom: 20px;
+		width:	300px;
+		border: 1px solid #999;
+		}
+#enclosure{
+		margin:1px;
+		padding: 10px;
+		background: #ccc;
+		}
+#enclosure p{
+		text-align:center;
+		}
+.element{
+			border-bottom: 1px dotted #fff;
+			clear:both;
+			padding:4px 0;
+			position:relative;
+			overflow:hidden;
+		}
+.element label{
+			text-align: right;
+			width: 100px;
+			padding: 4px;
+			position:relative;
+			overflow: hidden;
+			float:left;
+			}
+.element input.text{
+			position:relative;
+			overflow: hidden;
+			float:left;
+			width: 130px;
+			padding: 4px;
+			}
+ input.button{
+			height:24px;
+			border:1px solid #999;
+			text-align: center;
+			background: transparent url('../imgs/buttons_bg.jpg') repeat-x;
+			}

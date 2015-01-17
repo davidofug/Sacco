@@ -1,0 +1,111 @@
+			fieldset{
+					position:relative;
+					float:left;
+					clear:both;
+					width: 100%;
+					margin: 0 0 -1em 0;
+					padding: 0 0 1em 0;
+					background-color: #F2EFE9;
+					border-style:none;
+					border-top: 1px solid #BFBAB0;
+					}
+			legend{
+					padding:0;
+					color: #545351;
+					font-weight: bold;
+					}
+			legend span{
+					position: absolute;
+					margin-top: 0.5em;
+					left: 0.74em;
+					top:0;
+					font-size: 105%;
+					}
+			fieldset ol{
+					padding: 3.5em 1em 0 1em;
+					list-style: none;
+					}
+			fieldset li{
+					padding-bottom: 1em;
+					}
+			label{	
+					position: relative;
+					float:left;
+					width:10em;
+					margin-right:1em;
+					text-align:right;
+					}
+			label em{
+						position:absolute;
+						left:10em;
+						margin-left: 0.4em;
+						top: 0.5em;
+						}
+			fieldset.submit{
+					float: none;
+					width:auto;
+					padding-top: 1.5em;
+					padding-left: 12em;
+					background-color: #fff;
+			}
+			fieldset fieldset{
+					margin-bottom: -2.5em;
+					border-style: none;
+					background-color: transparent;
+					background-image: none;
+			}
+			fieldset fieldset legend{
+					margin-left: 0;
+					font-weight: normal;
+			}
+			fieldset fieldset ol{
+					position: relative;
+					top: -1.5em;
+					margin: 0 0 0 11em;
+					padding: 0;
+					}
+			fieldset fieldset label{
+				float: none;
+				width: auto;
+				margin-right: auto;
+			}
+	span.error{
+					background:url("../imgs/unchecked.gif") no-repeat 0px 0px;
+					padding-left: 16px;
+					padding-bottom: 3px;
+					color: #EA5200;
+					margin-left: 3px;
+			}
+	.suxs{
+			color:#090;
+			font-weight: bold;
+			}
+	span.checked{
+					margin-left: 3px;
+					background:url("../imgs/checked.gif") no-repeat 0px 0px;
+			}
+	select.error,input.error{  
+					color: #000;
+					border-color:#EA5200;
+					border-style:solid;
+					border-width:1px; 
+				} 
+			<!--[if lte IE 8]>
+			legend{
+					position: relative;
+					left: -7px;
+					top: -0.75em;
+					}
+			legend span{
+					margin-top: 1.25em;
+					}
+			fieldset{
+					position:relative;
+					}
+			fieldset ol{
+					padding-top: 3.25em;
+					}
+			fieldset fieldset legend{
+					top:0;
+					}
+			<![endif]-->
