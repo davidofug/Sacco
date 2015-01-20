@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.1
+-- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Nov 13, 2013 at 06:42 AM
--- Server version: 5.5.24-log
--- PHP Version: 5.4.3
+-- Host: 127.0.0.1
+-- Generation Time: Jan 20, 2015 at 07:18 AM
+-- Server version: 5.6.17
+-- PHP Version: 5.5.12
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -17,10 +17,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `sacco_db`
+-- Database: `sacco_app`
 --
-CREATE DATABASE IF NOT EXISTS `sacco_db` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `sacco_db`;
 
 -- --------------------------------------------------------
 
@@ -37,13 +35,6 @@ CREATE TABLE IF NOT EXISTS `activities` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=18 ;
 
---
--- Dumping data for table `activities`
---
-
-INSERT INTO `activities` (`id`, `userid`, `activity`, `date`, `time`) VALUES
-(1, 6, 'Logged in', '0000-00-00', '00:20:13'),
-
 -- --------------------------------------------------------
 
 --
@@ -51,25 +42,24 @@ INSERT INTO `activities` (`id`, `userid`, `activity`, `date`, `time`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `client_transactions` (
-  `id` bigint(64) NOT NULL AUTO_INCREMENT,
+  `id` int(64) NOT NULL AUTO_INCREMENT,
   `date` date NOT NULL,
   `pay_date` date NOT NULL,
-  `acnumber` varchar(10) NOT NULL,
-  `nature` varchar(15) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `principal` varchar(11) NOT NULL,
-  `interest` varchar(11) NOT NULL,
-  `principalbal` varchar(11) NOT NULL,
-  `interestbal` varchar(11) NOT NULL,
-  `refund` varchar(11) NOT NULL,
-  `due` varchar(11) NOT NULL,
-  `balance` varchar(11) NOT NULL,
-  `amount` varchar(11) NOT NULL,
+  `acnumber` varchar(10) COLLATE latin1_general_ci NOT NULL,
+  `nature` varchar(15) COLLATE latin1_general_ci NOT NULL,
+  `name` varchar(255) COLLATE latin1_general_ci NOT NULL,
+  `principal` varchar(11) COLLATE latin1_general_ci NOT NULL,
+  `interest` varchar(11) COLLATE latin1_general_ci NOT NULL,
+  `principalbal` varchar(11) COLLATE latin1_general_ci NOT NULL,
+  `interestbal` varchar(11) COLLATE latin1_general_ci NOT NULL,
+  `refund` varchar(11) COLLATE latin1_general_ci NOT NULL,
+  `due` varchar(11) COLLATE latin1_general_ci NOT NULL,
+  `balance` varchar(11) COLLATE latin1_general_ci NOT NULL,
+  `amount` varchar(11) COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20131110233521 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=1 ;
 
-
---------------------------
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `clients`
@@ -78,17 +68,16 @@ CREATE TABLE IF NOT EXISTS `client_transactions` (
 CREATE TABLE IF NOT EXISTS `clients` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `registered` date NOT NULL,
-  `name` varchar(70) NOT NULL,
-  `pincode` varchar(260) NOT NULL,
-  `acnumber` varchar(6) NOT NULL,
+  `name` varchar(70) COLLATE latin1_general_ci NOT NULL,
+  `pincode` varchar(260) COLLATE latin1_general_ci NOT NULL,
+  `acnumber` varchar(6) COLLATE latin1_general_ci NOT NULL,
   `age` int(2) NOT NULL,
-  `gender` varchar(7) NOT NULL,
-  `idnumber` varchar(18) NOT NULL,
-  `phnumber` varchar(25) NOT NULL,
-  `address` varchar(255) NOT NULL,
+  `gender` varchar(7) COLLATE latin1_general_ci NOT NULL,
+  `idnumber` varchar(18) COLLATE latin1_general_ci NOT NULL,
+  `phnumber` varchar(25) COLLATE latin1_general_ci NOT NULL,
+  `address` varchar(255) COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=672 ;
-
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -99,11 +88,11 @@ CREATE TABLE IF NOT EXISTS `clients` (
 CREATE TABLE IF NOT EXISTS `expenses` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `date` datetime NOT NULL,
-  `type` varchar(255) NOT NULL,
-  `particular` varchar(255) NOT NULL,
+  `type` varchar(255) COLLATE latin1_general_ci NOT NULL,
+  `particular` varchar(255) COLLATE latin1_general_ci NOT NULL,
   `amount` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -118,7 +107,7 @@ CREATE TABLE IF NOT EXISTS `groups` (
   `addedby` int(11) NOT NULL,
   `members` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -129,13 +118,12 @@ CREATE TABLE IF NOT EXISTS `groups` (
 CREATE TABLE IF NOT EXISTS `income` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `date` datetime NOT NULL,
-  `source` varchar(255) NOT NULL,
-  `particular` varchar(255) NOT NULL,
+  `source` varchar(255) COLLATE latin1_general_ci NOT NULL,
+  `particular` varchar(255) COLLATE latin1_general_ci NOT NULL,
   `amount` int(11) NOT NULL,
-  `postedby` varchar(255) NOT NULL,
+  `postedby` varchar(255) COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
-
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -151,7 +139,7 @@ CREATE TABLE IF NOT EXISTS `opcash` (
   `amount` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `transid` (`transid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -165,8 +153,7 @@ CREATE TABLE IF NOT EXISTS `reserve` (
   `type` tinyint(1) NOT NULL,
   `amount` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
-
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -176,19 +163,19 @@ CREATE TABLE IF NOT EXISTS `reserve` (
 
 CREATE TABLE IF NOT EXISTS `settings` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `datecreated` varchar(30) NOT NULL,
-  `datemodified` varchar(30) NOT NULL,
-  `usercreated` varchar(40) NOT NULL,
-  `usermodified` varchar(40) NOT NULL,
+  `datecreated` varchar(30) COLLATE latin1_general_ci NOT NULL,
+  `datemodified` varchar(30) COLLATE latin1_general_ci NOT NULL,
+  `usercreated` varchar(40) COLLATE latin1_general_ci NOT NULL,
+  `usermodified` varchar(40) COLLATE latin1_general_ci NOT NULL,
   `interestrate` int(11) unsigned NOT NULL,
   `systeminitcash` int(10) unsigned NOT NULL,
   `maxloan` int(10) unsigned NOT NULL,
   `loanduration` int(10) unsigned NOT NULL,
   `leastcash` int(10) unsigned NOT NULL,
-  `systemname` varchar(1000) NOT NULL,
-  `backupdir` varchar(1000) NOT NULL,
+  `systemname` varchar(1000) COLLATE latin1_general_ci NOT NULL,
+  `backupdir` varchar(1000) COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `settings`
@@ -204,23 +191,23 @@ INSERT INTO `settings` (`id`, `datecreated`, `datemodified`, `usercreated`, `use
 --
 
 CREATE TABLE IF NOT EXISTS `transactions` (
-  `id` bigint(64) NOT NULL,
+  `id` int(64) NOT NULL,
   `date` date NOT NULL,
   `datetime` datetime NOT NULL,
   `repaydate` date NOT NULL,
-  `acnumber` varchar(10) NOT NULL,
-  `particulars` varchar(254) NOT NULL,
-  `nature` varchar(140) NOT NULL,
-  `b_type` varchar(180) NOT NULL,
-  `r_type` varchar(180) NOT NULL,
-  `principal` varchar(11) NOT NULL,
-  `interest` varchar(11) NOT NULL,
-  `arrears` varchar(11) NOT NULL,
-  `amount` varchar(11) NOT NULL,
-  `c_balance` varchar(11) NOT NULL,
-  `user` varchar(30) NOT NULL,
+  `acnumber` varchar(10) COLLATE latin1_general_ci NOT NULL,
+  `particulars` varchar(254) COLLATE latin1_general_ci NOT NULL,
+  `nature` varchar(140) COLLATE latin1_general_ci NOT NULL,
+  `b_type` varchar(180) COLLATE latin1_general_ci NOT NULL,
+  `r_type` varchar(180) COLLATE latin1_general_ci NOT NULL,
+  `principal` varchar(11) COLLATE latin1_general_ci NOT NULL,
+  `interest` varchar(11) COLLATE latin1_general_ci NOT NULL,
+  `arrears` varchar(11) COLLATE latin1_general_ci NOT NULL,
+  `amount` varchar(11) COLLATE latin1_general_ci NOT NULL,
+  `c_balance` varchar(11) COLLATE latin1_general_ci NOT NULL,
+  `user` varchar(30) COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 -- --------------------------------------------------------
 
@@ -231,22 +218,22 @@ CREATE TABLE IF NOT EXISTS `transactions` (
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(3) NOT NULL AUTO_INCREMENT,
   `date` date NOT NULL,
-  `name` varchar(64) NOT NULL,
-  `uname` varchar(33) NOT NULL,
-  `upassword` varchar(33) NOT NULL,
+  `name` varchar(64) COLLATE latin1_general_ci NOT NULL,
+  `uname` varchar(33) COLLATE latin1_general_ci NOT NULL,
+  `upassword` varchar(33) COLLATE latin1_general_ci NOT NULL,
   `model` tinyint(1) NOT NULL,
   `status` tinyint(4) NOT NULL,
   `onoroff` tinyint(4) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `date`, `name`, `uname`, `upassword`, `model`, `status`, `onoroff`) VALUES
-(6, '2010-09-15', 'kasaali', 'kasaali', '5f4dcc3b5aa765d61d8327deb882cf99', 1, 1, 1),
-(8, '2011-01-07', 'kassali administrator', 'kasaali.admin', '5f4dcc3b5aa765d61d8327deb882cf99', 2, 1, 1),
+(6, '2010-09-15', 'User', 'user', '5f4dcc3b5aa765d61d8327deb882cf99', 1, 1, 1),
+(8, '2011-01-07', 'Super Admin', 'admin', '5f4dcc3b5aa765d61d8327deb882cf99', 2, 1, 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

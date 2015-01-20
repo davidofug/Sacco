@@ -6,6 +6,15 @@ Initially the Project was to help a small business to keep track of their member
 
 However in Uganda(Africa) there many new small savings and credit coperatives whose time is mostly spent on learning the procedures of running sacco and setting up a potential system to guide it's members. The time taken and the little usage of computers in the country hinders the usage of computer systems.
 
+To login to the current system visit
+
+http://youinspireyou.com/sacco and use the authentication
+
+Username		Password
+-------------------------
+Accountant		123456
+Admin			123456
+
 Features
 
 	Users
